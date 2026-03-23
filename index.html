@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ferienwohnung Balma in Zermatt: 67m² mit 2 Doppelzimmern, Balkon, Matterhorn-Blick. 250m zur Bergbahn. Ab CHF 180/Nacht.">
+<meta name="keywords" content="Ferienwohnung Zermatt, Apartment Matterhorn, Unterkunft Zermatt, Skiurlaub">
+<title>Ferienwohnung Zermatt mieten - Balma Apartment | 2 Zimmer, Balkon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ivory: #F8F5EF;
+    --sand: #E8E0D0;
+    --warm-grey: #9A9088;
+    --charcoal: #2C2825;
+    --gold: #B8955A;
+    --deep: #1A1715;
+    --white: #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 60px;
+    transition: background 0.4s, padding 0.4s;
+  }
+  nav.scrolled {
+    background: rgba(248,245,239,0.96);
+    backdrop-filter: blur(8px);
+    padding: 18px 60px;
+    border-bottom: 1px solid var(--sand);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.4s;
+  }
+  nav.scrolled .nav-logo { color: var(--charcoal); }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  nav.scrolled .nav-links a { color: var(--warm-grey); }
+  .nav-links a:hover, nav.scrolled .nav-links a:hover { color: var(--gold); }
+
+  /* ── HERO ── */
+  .hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(26,23,21,0.25) 0%, rgba(26,23,21,0.1) 40%, rgba(26,23,21,0.55) 100%),
+      url('hero.jpg') center/cover no-repeat;
+    transform: scale(1.04);
+    animation: heroZoom 12s ease-out forwards;
+  }
+  @keyframes heroZoom {
+    from { transform: scale(1.08); }
+    to { transform: scale(1.0); }
+  }
+  .hero-content {
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    animation: fadeUp 1.4s 0.3s both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(52px, 8vw, 96px);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.05;
+    letter-spacing: 0.04em;
+  }
+  .hero-title em { font-style: italic; font-weight: 300; }
+  .hero-subtitle {
+    margin-top: 24px;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+  .hero-scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.5);
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    animation: pulse 2.5s infinite;
+  }
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5));
+  }
+  @keyframes pulse { 0%,100% { opacity:0.5; } 50% { opacity:1; } }
+
+  /* ── SECTIONS ── */
+  section { padding: 120px 60px; }
+
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+
+  /* ── INTRO ── */
+  .intro {
+    background: var(--white);
+    padding: 100px 60px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .intro-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .intro-label {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+    display: block;
+  }
+  .intro-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--charcoal);
+    margin-bottom: 32px;
+  }
+  .intro-heading em { font-style: italic; color: var(--gold); }
+  .intro-text {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--warm-grey);
+    margin-bottom: 20px;
+  }
+  .intro-image {
+    position: relative;
+    height: 560px;
+  }
+  .intro-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .intro-image::before {
+    content: '';
+    position: absolute;
+    top: -20px; left: -20px;
+    right: 20px; bottom: 20px;
+    border: 1px solid var(--sand);
+    z-index: 0;
+  }
+
+  /* ── STATS ── */
+  .stats {
+    background: var(--charcoal);
+    padding: 80px 60px;
+  }
+  .stats-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .stat-item {
+    text-align: center;
+    padding: 40px 20px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .stat-label {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ── GALLERY ── */
+  .gallery { background: var(--ivory); padding: 120px 60px; }
+  .gallery-header { max-width:1200px; margin:0 auto 48px; }
+  .gstrip-wrap {
+    max-width: 1200px; margin: 0 auto;
+    overflow-x: scroll; -webkit-overflow-scrolling: touch;
+    cursor: grab; user-select: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) var(--sand);
+  }
+  .gstrip-wrap::-webkit-scrollbar { height: 3px; }
+  .gstrip-wrap::-webkit-scrollbar-track { background: var(--sand); }
+  .gstrip-wrap::-webkit-scrollbar-thumb { background: var(--gold); }
+  .gstrip-wrap::-webkit-scrollbar { display: none; }
+  .gstrip-wrap:active { cursor: grabbing; }
+  .gstrip {
+    display: flex; gap: 12px;
+    width: max-content; padding-bottom: 4px;
+  }
+  .gstrip-item {
+    width: 320px; height: 240px;
+    flex-shrink: 0; overflow: hidden; cursor: pointer;
+    position: relative;
+  }
+  .gstrip-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s ease;
+    display: block;
+  }
+  .gstrip-item:hover img { transform: scale(1.04); }
+  .gstrip-hint {
+    text-align: center; margin-top: 20px;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--warm-grey);
+  }
+
+  /* Lightbox */
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 999;
+    background: rgba(26,23,21,0.95); align-items: center; justify-content: center;
+  }
+  .lightbox.open { display: flex; }
+  .lb-inner { position: relative; max-width: 90vw; max-height: 90vh; }
+  .lb-slide { display: none; }
+  .lb-slide.active { display: block; }
+  .lb-slide img { max-width: 90vw; max-height: 85vh; object-fit: contain; display: block; }
+  .lb-close {
+    position: fixed; top: 24px; right: 32px;
+    background: none; border: none; color: rgba(255,255,255,0.6);
+    font-size: 32px; cursor: pointer; line-height: 1; z-index: 1000;
+    transition: color 0.2s;
+  }
+  .lb-close:hover { color: var(--white); }
+  .lb-nav {
+    position: fixed; top: 50%; transform: translateY(-50%);
+    background: rgba(248,245,239,0.15); border: none;
+    width: 48px; height: 48px; cursor: pointer; z-index: 1000;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .lb-nav:hover { background: rgba(248,245,239,0.3); }
+  .lb-nav.prev { left: 20px; }
+  .lb-nav.next { right: 20px; }
+  .lb-nav svg { width: 20px; height: 20px; color: var(--white); }
+  .lb-counter {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    font-size: 10px; letter-spacing: 0.2em; color: rgba(255,255,255,0.4);
+  }
+  @media(max-width:900px){
+    .gstrip-item { width: 260px; height: 195px; }
+    .gallery { padding: 80px 0 80px 24px; }
+  }
+
+  /* ── FEATURES ── */
+  .features { background: var(--white); padding: 120px 60px; }
+  .features-grid {
+    max-width: 1100px;
+    margin: 64px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  .feature-item { text-align: center; padding: 48px 32px; }
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 28px;
+    opacity: 0.6;
+  }
+  .feature-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+  }
+  .feature-text {
+    font-size: 12px;
+    line-height: 1.9;
+    color: var(--warm-grey);
+  }
+  .feature-divider {
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    margin: 20px auto;
+  }
+
+  /* ── LOCATION ── */
+  .location-section { background: var(--ivory); padding: 120px 0; }
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .location-image {
+    height: 600px;
+    overflow: hidden;
+  }
+  .location-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+  }
+  .location-image:hover img { transform: scale(1.04); }
+  .location-content {
+    background: var(--charcoal);
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .location-content .section-tag {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 300;
+    color: var(--charcoal);
+    line-height: 1.2;
+  }
+  .section-title em { font-style: italic; }
+  .location-content .section-title {
+    color: var(--white);
+  }
+  .location-content 
+  .location-text {
+    font-size: 13px;
+    line-height: 2;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+  }
+  .location-list {
+    list-style: none;
+    margin-top: 36px;
+  }
+  .location-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .location-list li::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  /* ── RATES ── */
+  .rates { background: var(--white); padding: 120px 60px; }
+  .rates-grid {
+    max-width: 900px;
+    margin: 64px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .rate-card {
+    border: 1px solid var(--sand);
+    padding: 48px 36px;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative;
+  }
+  .rate-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+  }
+  .rate-card.featured {
+    background: var(--charcoal);
+    border-color: var(--charcoal);
+  }
+  .rate-season {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: block;
+  }
+  .rate-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+  .rate-card.featured .rate-price { color: var(--white); }
+  .rate-currency { font-size: 20px; vertical-align: top; margin-top: 8px; display: inline-block; }
+  .rate-period {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--warm-grey);
+    margin-top: 8px;
+    display: block;
+  }
+  .rate-card.featured .rate-period { color: rgba(255,255,255,0.4); }
+  .rate-divider { width: 32px; height: 1px; background: var(--sand); margin: 24px auto; }
+  .rate-card.featured .rate-divider { background: rgba(255,255,255,0.15); }
+  .rate-name {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--warm-grey);
+  }
+  .rate-card.featured .rate-name { color: rgba(255,255,255,0.5); }
+
+  /* ── CONTACT ── */
+  .contact-section { background: var(--ivory); padding: 120px 60px; }
+  .contact-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-inner .section-tag { display: inline-block; }
+  .contact-inner 
+  .contact-intro {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--warm-grey);
+    margin-bottom: 60px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-form { text-align: left; }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 10px; }
+  .form-group label {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--warm-grey);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: var(--white);
+    border: 1px solid var(--sand);
+    padding: 14px 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--charcoal);
+    outline: none;
+    transition: border-color 0.3s;
+    appearance: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .form-full { grid-column: span 2; }
+  .btn-submit {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 16px 56px;
+    background: var(--charcoal);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    border: 1px solid var(--charcoal);
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  .btn-submit:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  .form-note {
+    font-size: 11px;
+    color: var(--warm-grey);
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+
+  /* ── ACTIVITIES ── */
+  .activities { background: var(--charcoal); padding: 120px 60px; }
+  .activities .section-tag {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .activities .section-title {
+    color: var(--white);
+  }
+  .activities 
+  .activities-intro {
+    font-size: 13px; line-height: 2;
+    color: rgba(255,255,255,0.45);
+    max-width: 560px;
+    margin: 20px 0 64px;
+  }
+  .activities-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    max-width: 1100px; margin-left: auto; margin-right: auto;
+    margin-bottom: 48px;
+  }
+  .tab-btn {
+    background: none; border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px; font-weight: 400;
+    letter-spacing: 0.25em; text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    padding: 16px 28px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+  .tab-btn:hover { color: rgba(255,255,255,0.7); }
+
+  .activities-panel { display: none; max-width: 1100px; margin: 0 auto; }
+  .activities-panel.active { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+
+  .activity-card {
+    position: relative; overflow: hidden;
+    height: 340px; cursor: default;
+  }
+  .activity-card img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.8s ease;
+    filter: brightness(0.6);
+  }
+  .activity-card:hover img { transform: scale(1.06); filter: brightness(0.45); }
+  .activity-info {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px 28px;
+    background: linear-gradient(to top, rgba(26,23,21,0.7) 0%, transparent 60%);
+  }
+  .activity-tag {
+    font-size: 8px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 8px;
+  }
+  .activity-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 300; color: var(--white);
+    margin-bottom: 8px;
+  }
+  .activity-desc {
+    font-size: 11px; line-height: 1.7;
+    color: rgba(255,255,255,0);
+    max-height: 0; overflow: hidden;
+    transition: color 0.3s, max-height 0.4s ease;
+  }
+  .activity-card:hover .activity-desc {
+    color: rgba(255,255,255,0.6);
+    max-height: 80px;
+  }
+  .activity-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.3s 0.1s, transform 0.3s 0.1s;
+  }
+  .activity-link::after { content: ' →'; }
+  .activity-card:hover .activity-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── ARRIVAL ── */
+  .arrival { background: var(--ivory); padding: 120px 60px; }
+  .arrival-grid {
+    max-width: 1100px; margin: 64px auto 0;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--sand);
+  }
+  .arrival-step {
+    padding: 56px 44px;
+    border-right: 1px solid var(--sand);
+    transition: background 0.3s;
+    position: relative;
+  }
+  .arrival-step:last-child { border-right: none; }
+  .arrival-step:hover { background: var(--white); }
+  .arrival-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px; font-weight: 300;
+    color: var(--sand); line-height: 1;
+    margin-bottom: 24px;
+  }
+  .arrival-icon {
+    width: 36px; height: 36px;
+    margin-bottom: 20px;
+    color: var(--gold);
+  }
+  .arrival-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; font-weight: 400;
+    color: var(--charcoal); margin-bottom: 16px;
+  }
+  .arrival-text {
+    font-size: 12px; line-height: 2;
+    color: var(--warm-grey); margin-bottom: 20px;
+  }
+  .arrival-detail {
+    font-size: 10px; letter-spacing: 0.1em;
+    color: var(--charcoal);
+    border-top: 1px solid var(--sand);
+    padding-top: 16px; margin-top: 16px;
+    line-height: 2;
+  }
+  .arrival-detail a { color: var(--gold); text-decoration: none; }
+  .arrival-map {
+    max-width: 1100px; margin: 32px auto 0;
+    background: var(--sand);
+    height: 320px; position: relative;
+    overflow: hidden;
+  }
+  .arrival-map iframe {
+    width: 100%; height: 100%; border: none;
+    filter: grayscale(0.3) contrast(1.05);
+  }
+  .arrival-map-label {
+    position: absolute; top: 20px; left: 20px;
+    background: var(--charcoal); color: var(--white);
+    font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 8px 16px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--deep);
+    padding: 80px 60px 40px;
+  }
+  .footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+  .footer-tagline {
+    font-size: 11px;
+    line-height: 1.9;
+    color: rgba(255,255,255,0.35);
+    max-width: 260px;
+  }
+  .footer-heading {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+  }
+  .footer-links { list-style: none; }
+  .footer-links li {
+    margin-bottom: 14px;
+  }
+  .footer-links a {
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-address {
+    font-size: 11px;
+    line-height: 2;
+    color: rgba(255,255,255,0.35);
+  }
+  .footer-address a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-copy {
+    font-size: 10px;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.1em;
+  }
+  .footer-social {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-social a {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-social a:hover { color: var(--gold); }
+
+  /* ── UTILITY ── */
+  .gold-line {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    vertical-align: middle;
+    margin-right: 16px;
+  }
+  .text-center { text-align: center; }
+
+  /* ── SUCCESS MESSAGE ── */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 60px 40px;
+    border: 1px solid var(--sand);
+    background: var(--white);
+  }
+  .form-success .check {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+  .form-success h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+  .form-success p {
+    font-size: 12px;
+    color: var(--warm-grey);
+    line-height: 2;
+  }
+  .form-error {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #d8a8a8;
+    background: #fff5f5;
+    margin-top: 20px;
+  }
+  .form-error p {
+    font-size: 12px;
+    color: #c44;
+    line-height: 2;
+  }
+  .form-loading {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    color: var(--warm-grey);
+  }
+  .spinner {
+    border: 2px solid var(--sand);
+    border-top: 2px solid var(--gold);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* ── LANG ── */
+  .lang-hidden { display: none !important; }
+  
+  .lang-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .lang-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.7);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  nav.scrolled .lang-btn {
+    border-color: var(--sand);
+    color: var(--warm-grey);
+  }
+  .lang-btn.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+  }
+  .lang-btn:hover:not(.active) {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* ── MOBILE ── */
+  
+  .mobile-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .mobile-menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    margin: 5px 0;
+  }
+  nav.scrolled .mobile-menu span {
+    background: var(--charcoal);
+  }
+  
+  @media (max-width: 900px) {
+    nav { padding: 20px 24px; }
+    nav.scrolled { padding: 14px 24px; }
+    
+    .mobile-menu { display: block; }
+    
+    .nav-links {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--charcoal);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+    }
+    
+    .nav-links.mobile-active {
+      transform: translateX(0);
+    }
+    
+    .nav-links a {
+      color: white !important;
+      font-size: 14px;
+    }
+    
+    section, .intro, .rates, .gallery, .features, .contact-section { padding: 80px 24px; }
+    .intro-grid, .form-row { grid-template-columns: 1fr; gap: 40px; }
+    .features-grid, .stats-grid, .rates-grid { grid-template-columns: 1fr; }
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .location-grid { grid-template-columns: 1fr; }
+    .location-image { height: 320px; }
+    .location-content { padding: 60px 32px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .arrival-grid { grid-template-columns: 1fr; }
+    .arrival-step { border-right: none; border-bottom: 1px solid var(--sand); }
+  }
+  
+  @media (max-width: 600px) {
+    
+    /* ANREISE - Stack alles */
+    .arrival-grid {
+      display: flex !important;
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    .arrival-step {
+      border-right: none !important;
+      border-bottom: 1px solid var(--sand) !important;
+      padding: 36px 20px !important;
+    }
+    
+    .arrival-step:last-child {
+      border-bottom: none !important;
+    }
+    
+    /* Autofrei Box auf Mobile */
+    .arrival-autofrei {
+      grid-column: auto !important;
+      flex-direction: column !important;
+      gap: 16px !important;
+      align-items: flex-start !important;
+      padding: 24px 20px !important;
+      border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+    }
+    
+    .arrival-autofrei svg {
+      width: 24px !important;
+      height: 24px !important;
+    }
+    
+    /* AKTIVITÄTEN - endlich richtig! */
+    .activities-grid {
+      grid-template-columns: 1fr !important;
+      gap: 2px !important;
+    }
+    
+    /* RATES CONDITIONS */
+    .rates-conditions-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .rates-conditions-grid > div {
+      border-right: none !important;
+      border-bottom: 1px solid var(--sand) !important;
+    }
+    .rates-conditions-grid > div:last-child {
+      border-bottom: none !important;
+    }
+    
+    /* Kleinere Paddings */
+    .activities [style*="padding:40px"] {
+      padding: 28px 20px !important;
+    }
+    
+    .rates [style*="padding:28px 36px"] {
+      padding: 24px 20px !important;
+    }
+  }
+</style></style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">Balma · Zermatt</a>
+  <ul class="nav-links">
+    <li><a href="#apartment">Apartment</a></li>
+    <li><a href="#galerie" class="lang-de">Galerie</a><a href="#galerie" class="lang-en lang-hidden">Gallery</a></li>
+    <li><a href="#lage" class="lang-de">Lage</a><a href="#lage" class="lang-en lang-hidden">Location</a></li>
+    <li><a href="#preise" class="lang-de">Preise</a><a href="#preise" class="lang-en lang-hidden">Rates</a></li>
+    <li><a href="#aktivitaeten" class="lang-de">Aktivitäten</a><a href="#aktivitaeten" class="lang-en lang-hidden">Activities</a></li>
+    <li><a href="#anreise" class="lang-de">Anreise</a><a href="#anreise" class="lang-en lang-hidden">Arrival</a></li>
+    <li><a href="#kontakt" class="lang-de">Kontakt</a><a href="#kontakt" class="lang-en lang-hidden">Contact</a></li>
+    <li class="lang-toggle">
+      <button class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+      <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+    </li>
+  </ul>
+  <button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow lang-de">4'478 m · Das Matterhorn</p>
+    <p class="hero-eyebrow lang-en lang-hidden">4'478 m · The Matterhorn</p>
+
+    <h1 class="hero-title">Balma<br><em>Zermatt</em></h1>
+    <p class="hero-subtitle lang-de">Zuhause im Herzen der Alpen</p>
+    <p class="hero-subtitle lang-en lang-hidden">Home in the Heart of the Alps</p>
+
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="lang-de">Entdecken</span>
+    <span class="lang-en lang-hidden">Discover</span>
+
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro" id="apartment">
+  <div class="intro-grid">
+    <div>
+      <span class="intro-label lang-de">Ihr Ferienaufenthalt</span>
+      <span class="intro-label lang-en lang-hidden">Your Holiday Stay</span>
+
+      <h2 class="intro-heading lang-de">Ihr Zuhause<br>im <em>Herzen der Alpen</em></h2>
+      <h2 class="intro-heading lang-en lang-hidden">Your Home<br>in the <em>Heart of the Alps</em></h2>
+      <p class="intro-text lang-de">Die Balma-Ferienwohnung bietet Ihnen 67 m² modernen Wohnkomfort auf dem ersten Stock — inklusive grosszügigem 9 m² Balkon mit direktem Blick ins Grüne.</p>
+      <p class="intro-text lang-en lang-hidden">The Balma apartment offers you 67 m² of modern living comfort on the first floor — including a spacious 9 m² balcony with direct views into nature.</p>
+
+      <p class="intro-text lang-de">Zwei Doppelzimmer, ein Schlafsofa im Wohnzimmer, ein vollausgestattetes Badezimmer und eine moderne Küche empfangen Sie. Wellnessbereich mit Fitness-Studio im Nachbargebäude auf Anfrage verfügbar.</p>
+      <p class="intro-text lang-en lang-hidden">Two double bedrooms, a sofa bed in the living room, a fully equipped bathroom, and a modern kitchen await you. Wellness area with gym in the neighboring building available upon request.</p>
+
+    </div>
+    <div class="intro-image">
+      <img src="intro.jpg" alt="Balma Wohnzimmer mit Bergblick" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">67</span>
+      <span class="stat-label lang-de">m² <span>Wohnfläche</span></span>
+      <span class="stat-label lang-en lang-hidden">m² <span>Living Space</span></span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">3</span>
+      <span class="stat-label lang-de"><span>Schlafmöglichkeiten</span></span>
+      <span class="stat-label lang-en lang-hidden"><span>Sleeping Options</span></span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">250m</span>
+      <span class="stat-label lang-de"><span>zur Bergbahn</span></span>
+      <span class="stat-label lang-en lang-hidden"><span>to Cable Car</span></span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">4★</span>
+      <span class="stat-label lang-de"><span>Sterne Komfort</span></span>
+      <span class="stat-label lang-en lang-hidden"><span>Star Comfort</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="galerie">
+  <div class="gallery-header">
+    <span class="section-tag lang-de">Galerie</span>
+    <span class="section-tag lang-en lang-hidden">Gallery</span>
+
+    <h2 class="section-title lang-de">Die <em>Wohnung</em></h2>
+    <h2 class="section-title lang-en lang-hidden">The <em>Apartment</em></h2>
+  </div>
+  <div style="position:relative">
+  <button onclick="document.getElementById('gstripWrap').scrollBy({left:-340,behavior:'smooth'})"
+    style="position:absolute;left:-20px;top:50%;transform:translateY(-50%);z-index:10;
+           width:44px;height:44px;border-radius:50%;background:var(--white);border:1px solid var(--sand);
+           cursor:pointer;font-size:18px;color:var(--charcoal);display:flex;align-items:center;
+           justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.08);">&#8249;</button>
+  <button onclick="document.getElementById('gstripWrap').scrollBy({left:340,behavior:'smooth'})"
+    style="position:absolute;right:-20px;top:50%;transform:translateY(-50%);z-index:10;
+           width:44px;height:44px;border-radius:50%;background:var(--white);border:1px solid var(--sand);
+           cursor:pointer;font-size:18px;color:var(--charcoal);display:flex;align-items:center;
+           justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.08);">&#8250;</button>
+  <div class="gstrip-wrap" id="gstripWrap">
+    <div class="gstrip" id="gstrip">
+      <div class="gstrip-item" onclick="openLightbox(0)"><img id="gimg0" src="gallery-1.jpg" alt="Balma Wohnzimmer mit Kamin" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(1)"><img id="gimg2" src="gallery-2.jpg" alt="Gemütliche Sitzecke am Kamin" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(2)"><img id="gimg3" src="gallery-3.jpg" alt="Doppelzimmer mit Doppelbett" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(3)"><img id="gimg4" src="gallery-4.jpg" alt="Zweites Doppelzimmer" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(4)"><img id="gimg5" src="gallery-5.jpg" alt="Moderne Küche" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(5)"><img id="gimg6" src="gallery-6.jpg" alt="Badezimmer mit Dusche" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(6)"><img id="gimg7" src="gallery-7.jpg" alt="Balkon mit Bergpanorama" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(7)"><img id="gimg8" src="gallery-8.jpg" alt="Skiraum für Ausrüstung" loading="lazy"></div>
+    <div class="gstrip-item" onclick="openLightbox(8)"><img src="gallery-9.jpg" alt="Rehe in Zermatt" loading="lazy"></div>
+
+    </div>
+  </div>
+</div>
+  <p class="gstrip-hint lang-de">← Scrollen →</p>
+  <p class="gstrip-hint lang-en lang-hidden">← Scroll →</p>
+
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxBg(event)">
+  <button class="lb-close" onclick="closeLightbox()">×</button>
+  <button class="lb-nav prev" onclick="lbPrev(event)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="lb-inner">
+    <div class="lb-slide" id="lb-0"><img src="gallery-1.jpg" alt="Balma Wohnzimmer mit Kamin"></div>
+    <div class="lb-slide" id="lb-1"><img src="gallery-2.jpg" alt="Gemütliche Sitzecke am Kamin"></div>
+    <div class="lb-slide" id="lb-2"><img src="gallery-3.jpg" alt="Doppelzimmer mit Doppelbett"></div>
+    <div class="lb-slide" id="lb-3"><img src="gallery-4.jpg" alt="Zweites Doppelzimmer"></div>
+    <div class="lb-slide" id="lb-4"><img src="gallery-5.jpg" alt="Moderne Küche"></div>
+    <div class="lb-slide" id="lb-5"><img src="gallery-6.jpg" alt="Badezimmer mit Dusche"></div>
+    <div class="lb-slide" id="lb-6"><img src="gallery-7.jpg" alt="Balkon mit Bergpanorama"></div>
+    <div class="lb-slide" id="lb-7"><img src="gallery-8.jpg" alt="Skiraum für Ausrüstung"></div>
+    <div class="lb-slide" id="lb-8"><img src="gallery-9.jpg" alt="Rehe in Zermatt"></div>
+
+  </div>
+  <button class="lb-nav next" onclick="lbNext(event)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lb-counter" id="lbCounter">1 / 9</div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="ausstattung">
+  <div class="text-center">
+    <span class="section-tag lang-de">Ausstattung</span>
+    <span class="section-tag lang-en lang-hidden">Amenities</span>
+
+    <h2 class="section-title lang-de">Alles was Sie <em>brauchen</em></h2>
+    <h2 class="section-title lang-en lang-hidden">Everything You <em>Need</em></h2>
+  </div>
+  <div class="features-grid">
+    <div class="feature-item">
+      <!-- Küche: Kochtopf -->
+      <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M10 20h28v14a4 4 0 01-4 4H14a4 4 0 01-4-4V20z"/>
+        <path d="M10 20h28M17 20v-4M31 20v-4M6 24h4M42 24h-4"/>
+        <path d="M20 10c0-2 2-3 2-5M26 10c0-2 2-3 2-5"/>
+      </svg>
+      <h3 class="feature-title lang-de">Vollausgestattete Küche</h3>
+      <h3 class="feature-title lang-en lang-hidden">Fully Equipped Kitchen</h3>
+
+      <div class="feature-divider"></div>
+      <p class="feature-text lang-de">Moderne Küchengeräte, alles für kulinarische Abenteuer zu Hause.</p>
+      <p class="feature-text lang-en lang-hidden">Modern kitchen appliances, everything for culinary adventures at home.</p>
+
+    </div>
+    <div class="feature-item">
+      <!-- Balkon: Terrasse mit Bergen -->
+      <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M4 38h40M4 38V28h40v10"/>
+        <path d="M14 28V16M34 28V16M14 16h20"/>
+        <path d="M10 22h28"/>
+        <path d="M20 12l4-6 4 6"/>
+        <path d="M12 10l3 6M36 10l-3 6"/>
+      </svg>
+      <h3 class="feature-title lang-de">Privater XXL Balkon</h3>
+      <h3 class="feature-title lang-en lang-hidden">Private XXL Balcony</h3>
+
+      <div class="feature-divider"></div>
+      <p class="feature-text lang-de">9 m² Balkon — perfekt für den Morgenkaffee in der frischen Alpenluft.</p>
+      <p class="feature-text lang-en lang-hidden">9 m² balcony — perfect for morning coffee in the fresh alpine air.</p>
+
+    </div>
+    <div class="feature-item">
+      <!-- Wellness: Badewanne / Spa -->
+      <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 28h36v4a6 6 0 01-6 6H12a6 6 0 01-6-6v-4z"/>
+        <path d="M16 28V18a4 4 0 014-4h0a4 4 0 014 4v2"/>
+        <path d="M6 28h4M42 28h-4"/>
+        <circle cx="32" cy="14" r="3"/>
+        <path d="M32 10V7M38 14h3M32 18v3M26 14h-3"/>
+      </svg>
+      <h3 class="feature-title">Free Wi-Fi</h3>
+
+      <div class="feature-divider"></div>
+      <p class="feature-text lang-de">Kostenloses WLAN in der gesamten Wohnung.</p>
+      <p class="feature-text lang-en lang-hidden">Free WiFi throughout the apartment.</p>
+
+    </div>
+    <div class="feature-item">
+      <!-- Schlafzimmer: Bett -->
+      <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 34V22M6 22h36v12M6 34h36M6 38v-4M42 38v-4"/>
+        <path d="M6 26h36"/>
+        <rect x="14" y="18" width="8" height="8" rx="1"/>
+        <rect x="26" y="18" width="8" height="8" rx="1"/>
+      </svg>
+      <h3 class="feature-title lang-de">2 Doppelzimmer</h3>
+      <h3 class="feature-title lang-en lang-hidden">2 Double Bedrooms</h3>
+
+      <div class="feature-divider"></div>
+      <p class="feature-text lang-de">Komfortable Doppelzimmer plus Schlafsofa im Wohnbereich für bis zu 6 Personen.</p>
+      <p class="feature-text lang-en lang-hidden">Comfortable double bedrooms plus sofa bed in the living area for up to 6 people.</p>
+
+    </div>
+
+    <div class="feature-item">
+      <!-- Sommer & Winter: Schneeflocke + Sonne -->
+      <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="32" cy="14" r="6"/>
+        <path d="M32 6V4M32 24v-2M40 14h2M22 14h2M37.7 8.3l1.4-1.4M24.9 21.1l1.4-1.4M37.7 19.7l1.4 1.4M24.9 6.9l1.4 1.4"/>
+        <path d="M16 28v16M16 28l-5 5M16 28l5 5M16 44l-5-5M16 44l5-5M8 36h16M8 36l5-5M8 36l5 5M24 36l-5-5M24 36l-5 5"/>
+      </svg>
+      <h3 class="feature-title lang-de">Sommer & Winter</h3>
+      <h3 class="feature-title lang-en lang-hidden">Summer & Winter</h3>
+
+      <div class="feature-divider"></div>
+      <p class="feature-text lang-de">Perfekte Lage für Skitouren im Winter und Wanderungen im Sommer.</p>
+      <p class="feature-text lang-en lang-hidden">Perfect location for ski tours in winter and hiking in summer.</p>
+
+    </div>
+
+    <div class="feature-item">
+      <!-- Skiraum: Ski icon -->
+      <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M8 38L36 10M36 10h-8M36 10v8"/>
+        <circle cx="12" cy="34" r="3"/>
+        <circle cx="36" cy="10" r="0"/>
+        <path d="M4 42l4-4M18 28l4 4"/>
+        <rect x="20" y="6" width="4" height="16" rx="2" transform="rotate(45 22 14)"/>
+      </svg>
+      <h3 class="feature-title lang-de">Skiraum</h3>
+      <h3 class="feature-title lang-en lang-hidden">Ski Room</h3>
+
+      <div class="feature-divider"></div>
+      <p class="feature-text lang-de">Eigener Skiraum im Gebäude — sicher verstauen, direkt am nächsten Morgen losfahren.</p>
+      <p class="feature-text lang-en lang-hidden">Own ski room in the building — store safely, hit the slopes the next morning.</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section" id="lage">
+  <div class="location-grid">
+    <div class="location-image">
+      <img src="Lage.jpg" alt="Zermatt village" loading="lazy">
+    </div>
+    <div class="location-content">
+      <span class="section-tag lang-de">Lage</span>
+      <span class="section-tag lang-en lang-hidden">Location</span>
+
+      <h2 class="section-title lang-de">Im Herzen<br>von <em>Zermatt</em></h2>
+      <h2 class="section-title lang-en lang-hidden">In the Heart<br>of <em>Zermatt</em></h2>
+      <p class="location-text lang-de">Die Balma liegt an der Luchernstrasse 37, im Quartier Obere Steinmatte — eine der ruhigsten und schönsten Lagen Zermatt's, und doch mitten im Geschehen.</p>
+      <p class="location-text lang-en lang-hidden">Balma is located at Luchernstrasse 37, in the Obere Steinmatte quarter — one of the quietest and most beautiful locations in Zermatt, yet right in the heart of the action.</p>
+
+      <ul class="location-list">
+        <li class="lang-de">250 m zur Matterhorn Paradise Bergbahn</li>
+        <li class="lang-en lang-hidden">250 m to Matterhorn Paradise Cable Car</li>
+
+        <li class="lang-de">5 min zu Fuss ins Zentrum</li>
+        <li class="lang-en lang-hidden">5 min walk to the center</li>
+
+        <li class="lang-de">Restaurants & Shops in der Nähe</li>
+        <li class="lang-en lang-hidden">Restaurants & shops nearby</li>
+
+        <li class="lang-de">Autofreie Umgebung</li>
+        <li class="lang-en lang-hidden">Car-free environment</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RATES -->
+<section class="rates" id="preise">
+  <div style="max-width:900px;margin:0 auto;text-align:center">
+    <span class="section-tag lang-de">Preise</span>
+    <span class="section-tag lang-en lang-hidden">Rates</span>
+
+    <h2 class="section-title lang-de">Tarife &amp; <em>Saison</em></h2>
+    <h2 class="section-title lang-en lang-hidden">Rates &amp; <em>Season</em></h2>
+    <p style="font-size:13px;line-height:2;color:var(--warm-grey);margin-top:20px;max-width:600px;margin-left:auto;margin-right:auto" class="lang-de">Die Preise richten sich nach Saison und Verfügbarkeit. Bitte kontaktieren Sie uns für eine persönliche Offerte.</p>
+    <p style="font-size:13px;line-height:2;color:var(--warm-grey);margin-top:20px;max-width:600px;margin-left:auto;margin-right:auto" class="lang-en lang-hidden">Prices vary by season and availability. Please contact us for a personal quote.</p>
+
+  </div>
+
+  <!-- Season cards -->
+  <div style="max-width:900px;margin:48px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+
+    <div class="rate-card">
+      <span class="rate-season lang-de">Nebensaison</span>
+      <span class="rate-season lang-en lang-hidden">Low Season</span>
+
+      <div style="margin:24px 0 8px">
+        <span style="font-size:18px;color:var(--warm-grey)">CHF</span>
+        <span style="font-size:52px;font-weight:300;color:var(--charcoal)">250</span>
+        <span style="font-size:22px;color:var(--warm-grey)">– 350</span>
+      </div>
+      <span class="rate-period lang-de">pro Nacht · 4 Personen</span>
+      <span class="rate-period lang-en lang-hidden">per night · 4 people</span>
+
+      <div class="rate-divider"></div>
+      <span class="rate-name lang-de">Standard Apartment</span>
+      <span class="rate-name lang-en lang-hidden">Standard Apartment</span>
+
+    </div>
+
+    <div class="rate-card featured">
+      <span class="rate-season lang-de">Hochsaison</span>
+      <span class="rate-season lang-en lang-hidden">High Season</span>
+
+      <div style="margin:24px 0 8px">
+        <span style="font-size:18px;color:rgba(255,255,255,0.5)">CHF</span>
+        <span style="font-size:52px;font-weight:300;color:var(--gold)">320</span>
+        <span style="font-size:22px;color:rgba(255,255,255,0.5)">– 450</span>
+      </div>
+      <span class="rate-period lang-de">pro Nacht · 4 Personen</span>
+      <span class="rate-period lang-en lang-hidden">per night · 4 people</span>
+
+      <div class="rate-divider"></div>
+      <span class="rate-name lang-de">Standard Apartment</span>
+      <span class="rate-name lang-en lang-hidden">Standard Apartment</span>
+
+    </div>
+  </div>
+
+  <!-- Conditions -->
+  <div style="max-width:900px;margin:32px auto 0;border:1px solid var(--sand);background:var(--white)">
+    <div class="rates-conditions-grid" style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--sand)">
+      <div style="padding:28px 36px;border-right:1px solid var(--sand)">
+        <div style="font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px" class="lang-de">Konditionen</div>
+        <div style="font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px" class="lang-en lang-hidden">Conditions</div>
+
+        <ul style="list-style:none;font-size:12px;line-height:2.2;color:var(--warm-grey)">
+          <li class="lang-de">· Kurzzeitaufschlag bei 2 Nächten</li>
+          <li class="lang-en lang-hidden">· Short-stay surcharge for 2 nights</li>
+
+          <li class="lang-de">· Reduktion ab 28 Nächten</li>
+          <li class="lang-en lang-hidden">· Reduction from 28 nights</li>
+
+        </ul>
+      </div>
+      <div style="padding:28px 36px">
+        <div style="font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px" class="lang-de">Kurtaxe</div>
+        <div style="font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px" class="lang-en lang-hidden">Tourist Tax</div>
+
+        <ul style="list-style:none;font-size:12px;line-height:2.2;color:var(--warm-grey)">
+          <li class="lang-de">· Erwachsene CHF 4.00 / Nacht</li>
+          <li class="lang-en lang-hidden">· Adults CHF 4.00 / night</li>
+
+          <li class="lang-de">· Kinder (9–16 J.) CHF 2.00 / Nacht</li>
+          <li class="lang-en lang-hidden">· Children (9–16 yrs) CHF 2.00 / night</li>
+
+        </ul>
+      </div>
+    </div>
+    <div style="padding:24px 36px">
+      <div style="font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:14px" class="lang-de">Inklusive</div>
+      <div style="font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:14px" class="lang-en lang-hidden">Included</div>
+
+      <p style="font-size:12px;line-height:2;color:var(--warm-grey)" class="lang-de">Elektrizität, Heizung, Wasser und Abfallgebühr · Bettwäsche, Handtücher und Küchenwäsche</p>
+      <p style="font-size:12px;line-height:2;color:var(--warm-grey)" class="lang-en lang-hidden">Electricity, heating, water and waste fee · Bed linen, towels and kitchen linen</p>
+
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:32px;font-size:11px;color:var(--warm-grey);letter-spacing:0.08em" class="lang-de">Alle Preise auf Anfrage · <a href="#kontakt" style="color:var(--gold)">Kontakt aufnehmen</a></p>
+  <p style="text-align:center;margin-top:32px;font-size:11px;color:var(--warm-grey);letter-spacing:0.08em" class="lang-en lang-hidden">All prices upon request · <a href="#kontakt" style="color:var(--gold)">Get in Touch</a></p>
+  </p>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="activities" id="aktivitaeten">
+  <div style="max-width:900px;margin:0 auto 64px;text-align:center">
+    <span class="section-tag lang-de">Erleben</span>
+    <span class="section-tag lang-en lang-hidden">Experience</span>
+    <h2 class="section-title lang-de">Zermatt <em>entdecken</em></h2>
+    <h2 class="section-title lang-en lang-hidden">Discover <em>Zermatt</em></h2>
+  </div>
+
+  <div class="activities-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px">
+
+    <!-- WINTER -->
+    <div style="display:flex;flex-direction:column">
+      <div style="overflow:hidden">
+        <img src="hero.jpg"
+             alt="Winter Zermatt"
+             style="width:100%;height:260px;object-fit:cover;display:block;transition:transform 0.8s"
+             onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+      <div style="background:var(--deep);padding:40px 36px;flex:1">
+        <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">❄ Winter</div>
+        <h3 class="section-title lang-de" style="color:var(--white);margin-bottom:20px;font-size:28px">Ski &amp; Schnee</h3>
+        <h3 class="section-title lang-en lang-hidden" style="color:var(--white);margin-bottom:20px;font-size:28px">Ski &amp; Snow</h3>
+        <div style="width:28px;height:1px;background:var(--gold);margin-bottom:24px"></div>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Skifahren &amp; Snowboard — 360 km Pisten, 52 Lifte, 3&#x2019;883 m</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Skiing &amp; Snowboarding — 360 km slopes, 52 lifts, 3&#x2019;883 m</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Schneeschuhwandern auf der Gorner-Hochfläche</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Snowshoeing on the Gorner plateau</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Naturrodelbahn Furi–Zermatt (3 km)</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Natural toboggan run Furi–Zermatt (3 km)</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Eisbahn im Dorfzentrum</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Ice rink in the village center</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Winterwanderweg Schwarzsee (2&#x2019;583 m)</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Winter hiking trail Schwarzsee (2&#x2019;583 m)</li>
+        </ul>
+        <a href="https://www.matterhornparadise.ch" target="_blank" style="display:inline-block;margin-top:28px;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none">matterhornparadise.ch →</a>
+      </div>
+    </div>
+
+    <!-- SOMMER -->
+    <div style="display:flex;flex-direction:column">
+      <div style="overflow:hidden">
+        <img id="gimg_sommer" src="Sommer.jpg"
+             alt="Sommer Zermatt"
+             style="width:100%;height:260px;object-fit:cover;display:block;transition:transform 0.8s"
+             onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+      <div style="background:var(--deep);padding:40px 36px;flex:1">
+        <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">☀ Sommer</div>
+        <h3 class="section-title lang-de" style="color:var(--white);margin-bottom:20px;font-size:28px">Wandern &amp; Natur</h3>
+        <h3 class="section-title lang-en lang-hidden" style="color:var(--white);margin-bottom:20px;font-size:28px">Hiking &amp; Nature</h3>
+        <div style="width:28px;height:1px;background:var(--gold);margin-bottom:24px"></div>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Wandern — 400 km Wege, Five Lakes Trail, Hörnlihütte</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Hiking — 400 km trails, Five Lakes Trail, Hörnlihütte</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Mountainbike &amp; E-Bike — Verleih vor Ort</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Mountain bike &amp; E-bike — rental on site</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Bergsteigen Matterhorn (4&#x2019;478 m) — Alpincenter Zermatt</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Mountaineering Matterhorn (4&#x2019;478 m) — Alpincenter Zermatt</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Klettersteig Zmutt &amp; Rothorn</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Via ferrata Zmutt &amp; Rothorn</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Sommerski auf dem Theodulgletscher</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Summer skiing on the Theodul Glacier</li>
+        </ul>
+        <a href="http://zermatt.com/category/zermatt/summer/" target="_blank" style="display:inline-block;margin-top:28px;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none">zermatt.ch →</a>
+      </div>
+    </div>
+
+    <!-- GANZJÄHRIG -->
+    <div style="display:flex;flex-direction:column">
+      <div style="overflow:hidden">
+        <img src="Lage.jpg"
+             alt="Ganzjährig Zermatt"
+             style="width:100%;height:260px;object-fit:cover;display:block;transition:transform 0.8s"
+             onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+      <div style="background:var(--deep);padding:40px 36px;flex:1">
+        <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px" class="lang-de">◎ Ganzjährig</div>
+        <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px" class="lang-en lang-hidden">◎ Year-round</div>
+        <h3 class="section-title lang-de" style="color:var(--white);margin-bottom:20px;font-size:28px">Kulinarik &amp; Leben</h3>
+        <h3 class="section-title lang-en lang-hidden" style="color:var(--white);margin-bottom:20px;font-size:28px">Cuisine &amp; Life</h3>
+        <div style="width:28px;height:1px;background:var(--gold);margin-bottom:24px"></div>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>100+ Restaurants — Raclette, Fondue, Gourmetküche</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>100+ restaurants — raclette, fondue, gourmet cuisine</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative">Matterhorn Museum Zermatlantis</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Shopping — Boutiquen, Uhren, Sportartikel</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Shopping — boutiques, watches, sports equipment</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Spa &amp; Wellness im Nachbarhaus</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Spa &amp; wellness in the neighboring building</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-de"><span style="position:absolute;left:0;color:var(--gold)">·</span>Gornergrat-Bahn (3&#x2019;089 m) — Panoramafahrt</li>
+          <li style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.6);padding-left:16px;position:relative" class="lang-en lang-hidden"><span style="position:absolute;left:0;color:var(--gold)">·</span>Gornergrat Railway (3&#x2019;089 m) — panoramic ride</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ARRIVAL -->
+<section class="arrival" id="anreise">
+  <div style="max-width:1100px;margin:0 auto;text-align:center">
+    <span class="section-tag lang-de">Anreise</span>
+    <span class="section-tag lang-en lang-hidden">Arrival</span>
+
+    <h2 class="section-title lang-de">Wie Sie zu <em>uns gelangen</em></h2>
+    <h2 class="section-title lang-en lang-hidden">How to <em>Reach Us</em></h2>
+  </div>
+  <div class="arrival-grid">
+    <!-- ZERMATT = AUTO-FREE NOTE -->
+    <div class="arrival-step arrival-autofrei" style="background:var(--charcoal);border-right:none;grid-column:span 3;padding:20px 44px;display:flex;align-items:center;gap:32px;border-bottom:1px solid rgba(255,255,255,0.06)">
+      <svg style="width:28px;height:28px;flex-shrink:0;color:var(--gold)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+      <p style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.8;margin:0" class="lang-de"><strong style="color:var(--gold);font-weight:400;letter-spacing:0.1em">Zermatt ist autofrei.</strong> Privatfahrzeuge sind nur bis Täsch (5 km vor Zermatt) erlaubt. Parkhaus Matterhorn Terminal Täsch vorhanden.</p>
+      <p style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.8;margin:0" class="lang-en lang-hidden"><strong style="color:var(--gold);font-weight:400;letter-spacing:0.1em">Zermatt is car-free.</strong> Private vehicles are only allowed up to Täsch (5 km before Zermatt). Parking garage Matterhorn Terminal Täsch available.</p>
+    </div>
+
+    <div class="arrival-step">
+      <div class="arrival-number">01</div>
+      <svg class="arrival-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="10" width="30" height="18" rx="2"/>
+        <path d="M3 16h30M10 10V7M26 10V7M8 24h4M24 24h4"/>
+      </svg>
+      <h3 class="arrival-title lang-de">Mit dem Zug</h3>
+      <h3 class="arrival-title lang-en lang-hidden">By Train</h3>
+
+      <p class="arrival-text lang-de">Die Matterhorn Gotthard Bahn fährt direkt von Brig und Visp nach Zermatt (ca. 90 Min.). Ab Täsch gibt es alle 20 Minuten einen Shuttle-Zug (12 Min.).</p>
+      <p class="arrival-text lang-en lang-hidden">The Matterhorn Gotthard Railway runs directly from Brig and Visp to Zermatt (approx. 90 min.). From Täsch there is a shuttle train every 20 minutes (12 min.).</p>
+
+      <div class="arrival-detail">
+        <a href="https://www.matterhorngotthardbahn.ch" target="_blank">matterhorngotthardbahn.ch</a><br>
+        <span class="lang-de">Vom Bahnhof Zermatt: 15 Min. zu Fuss zur Balma</span>
+        <span class="lang-en lang-hidden">From Zermatt train station: 15 min. walk to Balma</span>
+
+      </div>
+    </div>
+
+    <div class="arrival-step">
+      <div class="arrival-number">02</div>
+      <svg class="arrival-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 28l5-5 6 4 6-8 7 9"/>
+        <circle cx="10" cy="14" r="5"/>
+        <path d="M14 10l2-4 2 4"/>
+      </svg>
+      <h3 class="arrival-title lang-de">Mit dem Taxi</h3>
+      <h3 class="arrival-title lang-en lang-hidden">By Taxi</h3>
+
+      <p class="arrival-text lang-de">Ab Täsch bringt Sie ein Taxi nach Zermatt. Im Dorf steht Ihnen der 24-Stunden Elektrotaxi-Service zur Verfügung — in 5 Minuten zur Balma.</p>
+      <p class="arrival-text lang-en lang-hidden">From Täsch a taxi will take you to Zermatt. In the village you have access to the 24-hour electric taxi service — 5 minutes to Balma.</p>
+
+      <div class="arrival-detail">
+        <span class="lang-de">Taxi Täsch–Zermatt:</span>
+        <span class="lang-en lang-hidden">Taxi Täsch–Zermatt:</span>
+        <br>
+        <a href="tel:+41279673366">Taxi Fredy +41 27 967 33 66</a><br>
+        <span class="lang-de">Taxi Zermatt (24h):</span>
+        <span class="lang-en lang-hidden">Taxi Zermatt (24h):</span>
+        <br>
+        <a href="tel:+41279676060">Taxi Bolero +41 27 967 60 60</a>
+      </div>
+    </div>
+
+    <div class="arrival-step">
+      <div class="arrival-number">03</div>
+      <svg class="arrival-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 4C13 4 9 8 9 13c0 7 9 19 9 19s9-12 9-19c0-5-4-9-9-9z"/>
+        <circle cx="18" cy="13" r="3"/>
+      </svg>
+      <h3 class="arrival-title lang-de">Zu Fuss</h3>
+      <h3 class="arrival-title lang-en lang-hidden">On Foot</h3>
+
+      <p class="arrival-text lang-de">Geniessen Sie die ersten Schritte in der Alpenluft: Vom Bahnhof Zermatt ist die Balma in ca. 15 Minuten bequem zu Fuss erreichbar.</p>
+      <p class="arrival-text lang-en lang-hidden">Enjoy your first steps in the alpine air: From Zermatt train station, Balma is comfortably reachable on foot in about 15 minutes.</p>
+
+      <div class="arrival-detail">
+        Luchernstrasse 37<br>
+        3920 Zermatt<br>
+        <a href="https://maps.google.com/?q=Luchernstrasse+37+Zermatt" target="_blank" class="lang-de">Auf Google Maps öffnen →</a>
+        <a href="https://maps.google.com/?q=Luchernstrasse+37+Zermatt" target="_blank" class="lang-en lang-hidden">Open in Google Maps →</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="arrival-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1395.0!2d7.7468!3d46.0204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789bda79e77f5fb%3A0x1b2e1c2a3d4e5f60!2sLuchernstrasse%2037%2C%203920%20Zermatt!5e0!3m2!1sde!2sch!4v1700000000000"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="arrival-map-label">Balma · Luchernstrasse 37</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="kontakt">
+  <div class="contact-inner">
+    <span class="section-tag lang-de">Kontakt & Anfrage</span>
+    <span class="section-tag lang-en lang-hidden">Contact & Inquiry</span>
+
+    <h2 class="section-title lang-de">Ihre <em>Anfrage</em></h2>
+    <h2 class="section-title lang-en lang-hidden">Your <em>Inquiry</em></h2>
+    <p class="contact-intro lang-de">Wir nehmen keine Direktbuchungen vor. Bitte füllen Sie das Formular aus — wir melden uns innerhalb von 24 Stunden mit Verfügbarkeit und Details.</p>
+    <p class="contact-intro lang-en lang-hidden">We do not take direct bookings. Please fill out the form — we will get back to you within 24 hours with availability and details.</p>
+
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdawvrvl" method="POST">
+      <input type="hidden" name="_language" id="formLanguage" value="de">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="lang-de">Vorname</label>
+          <label class="lang-en lang-hidden">First Name</label>
+
+          <input type="text" id="fname" name="vorname" required>
+        </div>
+        <div class="form-group">
+          <label class="lang-de">Nachname</label>
+          <label class="lang-en lang-hidden">Last Name</label>
+
+          <input type="text" id="lname" name="nachname" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>E-Mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label class="lang-de">Telefon (optional)</label>
+          <label class="lang-en lang-hidden">Phone (optional)</label>
+
+          <input type="tel" id="phone" name="telefon">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="lang-de">Anreise</label>
+          <label class="lang-en lang-hidden">Check-in</label>
+
+          <input type="date" id="checkin" name="anreise" required>
+        </div>
+        <div class="form-group">
+          <label class="lang-de">Abreise</label>
+          <label class="lang-en lang-hidden">Check-out</label>
+
+          <input type="date" id="checkout" name="abreise" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="lang-de">Anzahl Personen</label>
+          <label class="lang-en lang-hidden">Number of Guests</label>
+
+          <select id="guests" name="personen">
+            <option>1–2</option>
+            <option>3–4</option>
+            <option>5–6</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="lang-de">Sprache</label>
+          <label class="lang-en lang-hidden">Language</label>
+
+          <select id="lang-pref" name="sprache">
+            <option class="lang-de">Deutsch</option>
+            <option class="lang-de">Englisch</option>
+            <option class="lang-en lang-hidden">German</option>
+            <option class="lang-en lang-hidden">English</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:24px">
+        <label>Ihre Nachricht</label>
+
+        <textarea id="message" name="nachricht" class="lang-de" placeholder="Besondere Wünsche, Fragen zur Lage..."></textarea>
+        <textarea id="message-en" name="message" class="lang-en lang-hidden" placeholder="Special requests, questions about location..."></textarea>
+
+      </div>
+      <div style="text-align:center">
+        <button type="submit" class="btn-submit">
+          <span class="lang-de">Anfrage senden</span>
+          <span class="lang-en lang-hidden">Send Inquiry</span>
+        </button>
+        </div>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <div class="check">✓</div>
+      <h3 class="lang-de">Anfrage erhalten</h3>
+      <h3 class="lang-en lang-hidden">Inquiry Received</h3>
+
+      <p class="lang-de">Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden.</p>
+      <p class="lang-en lang-hidden">Thank you for your inquiry. We will get back to you within 24 hours.</p>
+
+    </div>
+
+    <div class="form-loading" id="formLoading">
+      <div class="spinner"></div>
+      <p class="lang-de">Ihre Anfrage wird gesendet...</p>
+      <p class="lang-en lang-hidden">Sending your inquiry...</p>
+    </div>
+
+    <div class="form-error" id="formError">
+      <p class="lang-de">Entschuldigung, es gab einen Fehler beim Senden Ihrer Anfrage. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.</p>
+      <p class="lang-en lang-hidden">Sorry, there was an error sending your inquiry. Please try again or contact us directly via email.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Balma · Zermatt</div>
+      <p class="footer-tagline lang-de">Eine Ferienwohnung im Herzen der Schweizer Alpen — wo die Berge beginnen und das Alltägliche endet.</p>
+      <p class="footer-tagline lang-en lang-hidden">A vacation apartment in the heart of the Swiss Alps — where the mountains begin and the everyday ends.</p>
+
+    </div>
+    <div>
+      <div class="footer-heading lang-de">Navigation</div>
+      <div class="footer-heading lang-en lang-hidden">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#apartment">Apartment</a></li>
+        <li><a href="#galerie" class="lang-de">Galerie</a><a href="#galerie" class="lang-en lang-hidden">Gallery</a></li>
+        <li><a href="#lage" class="lang-de">Lage</a><a href="#lage" class="lang-en lang-hidden">Location</a></li>
+        <li><a href="#preise" class="lang-de">Preise</a><a href="#preise" class="lang-en lang-hidden">Rates</a></li>
+        <li><a href="#kontakt" class="lang-de">Anfrage</a><a href="#kontakt" class="lang-en lang-hidden">Inquiry</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading lang-de">Adresse</div>
+      <div class="footer-heading lang-en lang-hidden">Address</div>
+      <p class="footer-address">
+        Balma Apartment<br>
+        Luchernstrasse 37<br>
+        3920 Zermatt<br>
+        <span class="lang-de">Schweiz</span><span class="lang-en lang-hidden">Switzerland</span><br><br>
+        <a href="mailto:contact@zermattrealty.com">contact@zermattrealty.com</a>
+      </p>
+    </div>
+    <div>
+      <div class="footer-heading">Zermatt</div>
+      <ul class="footer-links">
+        <li><a href="http://www.zermatt.ch" target="_blank">Zermatt Tourism</a></li>
+        <li><a href="#kontakt" class="lang-de">Buchungsanfrage</a><a href="#kontakt" class="lang-en lang-hidden">Booking Inquiry</a></li>
+        <li><a href="https://instagram.com/zermattrealty" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Balma Apartment Zermatt</span>
+    <div class="footer-social">
+      <a href="https://instagram.com/zermattrealty" target="_blank">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  // Gallery lightbox
+  let lbCurrent = 0;
+  const lbTotal = 9;
+  function openLightbox(n) {
+    lbCurrent = n;
+    lbUpdate();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeLightboxBg(e) { if(e.target === document.getElementById('lightbox')) closeLightbox(); }
+  function lbUpdate() {
+    document.querySelectorAll('.lb-slide').forEach((s,i) => s.classList.toggle('active', i===lbCurrent));
+    document.getElementById('lbCounter').textContent = (lbCurrent+1) + ' / ' + lbTotal;
+  }
+  function lbNext(e) { e.stopPropagation(); lbCurrent=(lbCurrent+1)%lbTotal; lbUpdate(); }
+  function lbPrev(e) { e.stopPropagation(); lbCurrent=(lbCurrent-1+lbTotal)%lbTotal; lbUpdate(); }
+  document.addEventListener('keydown', e => {
+    if(!document.getElementById('lightbox').classList.contains('open')) return;
+    if(e.key==='ArrowRight') lbNext(e);
+    if(e.key==='ArrowLeft') lbPrev(e);
+    if(e.key==='Escape') closeLightbox();
+  });
+  // Drag-to-scroll strip
+  const strip = document.getElementById('gstripWrap');
+  if(strip) {
+    let isDragging=false, hasDragged=false, startX, scrollLeft;
+    strip.addEventListener('mousedown', e=>{ isDragging=true; hasDragged=false; startX=e.pageX-strip.offsetLeft; scrollLeft=strip.scrollLeft; });
+    strip.addEventListener('mouseleave', ()=>{ isDragging=false; });
+    strip.addEventListener('mouseup', ()=>{ isDragging=false; });
+    strip.addEventListener('mousemove', e=>{
+      if(!isDragging) return;
+      const dx = e.pageX - strip.offsetLeft - startX;
+      if(Math.abs(dx) > 5) { hasDragged=true; e.preventDefault(); strip.scrollLeft = scrollLeft - dx; }
+    });
+    // Block click only if user actually dragged
+    strip.addEventListener('click', e=>{ if(hasDragged) { e.stopPropagation(); hasDragged=false; } });
+  }
+
+  // Activity tabs
+  function showTab(tab, btn) {
+    document.querySelectorAll('.activities-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('panel-' + tab).classList.add('active');
+    btn.classList.add('active');
+  }
+
+
+  // Mobile Menu Toggle
+  function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('mobile-active');
+    document.body.style.overflow = navLinks.classList.contains('mobile-active') ? 'hidden' : '';
+  }
+
+  // Schließe Menu wenn Link geklickt
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('mobile-active');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Nav scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Language toggle
+  function switchLanguage(lang) {
+    document.documentElement.lang = lang;
+    
+    // Verstecke alle Sprachen
+    document.querySelectorAll('.lang-de, .lang-en').forEach(el => {
+      el.classList.add('lang-hidden');
+    });
+    
+    // Zeige gewählte Sprache
+    document.querySelectorAll('.lang-' + lang).forEach(el => {
+      el.classList.remove('lang-hidden');
+    });
+    
+    // Update Buttons
+    document.querySelectorAll('.lang-btn').forEach((btn, idx) => {
+      if ((lang === 'de' && idx === 0) || (lang === 'en' && idx === 1)) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+    
+    // Update hidden form field for Formspree
+    const formLangField = document.getElementById('formLanguage');
+    if (formLangField) {
+      formLangField.value = lang;
+    }
+    
+    // Speichern
+    localStorage.setItem('preferredLanguage', lang);
+  }
+
+  // Init language on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'de';
+    if (savedLang === 'en') {
+      switchLanguage('en');
+    } else {
+      // Update form language field even for default language
+      const formLangField = document.getElementById('formLanguage');
+      if (formLangField) {
+        formLangField.value = savedLang;
+      }
+    }
+  });
+
+  // AJAX Form Submission
+  const contactForm = document.getElementById('contactForm');
+  const formSuccess = document.getElementById('formSuccess');
+  const formLoading = document.getElementById('formLoading');
+  const formError = document.getElementById('formError');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Hide all messages
+      formSuccess.style.display = 'none';
+      formError.style.display = 'none';
+      
+      // Show loading
+      formLoading.style.display = 'block';
+      contactForm.style.display = 'none';
+      
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        formLoading.style.display = 'none';
+        
+        if (response.ok) {
+          // Success!
+          formSuccess.style.display = 'block';
+          contactForm.reset();
+        } else {
+          // Error
+          formError.style.display = 'block';
+          contactForm.style.display = 'block';
+        }
+      } catch (error) {
+        // Network error
+        formLoading.style.display = 'none';
+        formError.style.display = 'block';
+        contactForm.style.display = 'block';
+      }
+    });
+  }
+
+  // Gallery
+  let gCurrent = 0;
+</script>
+</body>
+</html>
