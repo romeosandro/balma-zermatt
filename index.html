@@ -1971,14 +1971,31 @@
 
   // Init language on page load
   window.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferredLanguage') || 'de';
+    // Check if user has a saved preference
+    let savedLang = localStorage.getItem('preferredLanguage');
+    
+    // If no saved preference, detect from browser
+    if (!savedLang) {
+      const browserLang = navigator.language || navigator.userLanguage;
+      // Check if browser language is German
+      if (browserLang.startsWith('de')) {
+        savedLang = 'de';
+      } 
+      // All other languages default to English
+      else {
+        savedLang = 'en';
+      }
+    }
+    
+    // Apply the language
     if (savedLang === 'en') {
       switchLanguage('en');
     } else {
+      switchLanguage('de');
       // Update form language field even for default language
       const formLangField = document.getElementById('formLanguage');
       if (formLangField) {
-        formLangField.value = savedLang;
+        formLangField.value = 'de';
       }
     }
   });
