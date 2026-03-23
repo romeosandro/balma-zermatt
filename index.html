@@ -35,7 +35,7 @@
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -922,6 +922,9 @@
     cursor: pointer;
     padding: 8px;
   }
+  .mobile-close {
+    display: none;
+  }
   .mobile-menu span {
     display: block;
     width: 24px;
@@ -939,6 +942,28 @@
     
     .mobile-menu { display: block; }
     
+    .mobile-close {
+      display: block;
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 48px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0;
+      width: 48px;
+      height: 48px;
+      z-index: 10001;
+      transition: color 0.3s;
+    }
+    
+    .mobile-close:hover {
+      color: var(--gold);
+    }
+    
     .nav-links {
       position: fixed;
       top: 0;
@@ -952,7 +977,10 @@
       gap: 32px;
       transform: translateX(100%);
       transition: transform 0.3s ease;
-      z-index: 999;
+      z-index: 9999;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      will-change: transform;
     }
     
     .nav-links.mobile-active {
@@ -962,6 +990,18 @@
     .nav-links a {
       color: white !important;
       font-size: 14px;
+    }
+    
+    .mobile-menu {
+      z-index: 10000;
+      position: relative;
+    }
+    
+    /* Prevent body scroll jump when menu opens */
+    body.menu-open {
+      position: fixed;
+      width: 100%;
+      overflow-y: scroll;
     }
     
     section, .intro, .rates, .gallery, .features, .contact-section { padding: 80px 24px; }
@@ -1045,6 +1085,7 @@
 <nav id="mainNav">
   <a href="#" class="nav-logo">Balma · Zermatt</a>
   <ul class="nav-links">
+    <button class="mobile-close" onclick="toggleMobileMenu()" aria-label="Close Menu">×</button>
     <li><a href="#apartment">Apartment</a></li>
     <li><a href="#galerie" class="lang-de">Galerie</a><a href="#galerie" class="lang-en lang-hidden">Gallery</a></li>
     <li><a href="#lage" class="lang-de">Lage</a><a href="#lage" class="lang-en lang-hidden">Location</a></li>
@@ -1847,17 +1888,45 @@
 
 
   // Mobile Menu Toggle
+  let scrollPosition = 0;
+  
   function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('mobile-active');
-    document.body.style.overflow = navLinks.classList.contains('mobile-active') ? 'hidden' : '';
+    const isOpening = !navLinks.classList.contains('mobile-active');
+    
+    if (isOpening) {
+      // Save current scroll position
+      scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      // Add class and prevent scroll
+      navLinks.classList.add('mobile-active');
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollPosition}px`;
+      document.body.style.width = '100%';
+    } else {
+      // Remove class and restore scroll
+      navLinks.classList.remove('mobile-active');
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      // Restore scroll position
+      window.scrollTo(0, scrollPosition);
+    }
   }
 
   // Schließe Menu wenn Link geklickt
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.remove('mobile-active');
-      document.body.style.overflow = '';
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks.classList.contains('mobile-active')) {
+        navLinks.classList.remove('mobile-active');
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        window.scrollTo(0, scrollPosition);
+      }
     });
   });
 
